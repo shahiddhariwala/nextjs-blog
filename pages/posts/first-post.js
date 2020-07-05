@@ -1,5 +1,20 @@
+import React from 'react';
+import Head from 'next/head'
+import Link from 'next/link';
+import Layout from '../../components/layout';
+
 const firstPost = () => {
-    return ( <h1>Shahid's First Post</h1> );
+    return (<Layout>
+        <Head>
+            <title>First Post</title>
+        </Head>
+        <h1>First Post</h1>
+        <h2>
+            <Link href="/">
+                <a>Back to home</a>
+            </Link>
+        </h2>
+    </Layout>);
 }
- 
+
 export default firstPost;
