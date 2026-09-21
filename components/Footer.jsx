@@ -40,8 +40,8 @@ export default function Footer() {
                 </a>
             </div>
             <p className="footer-note">
-                © {year} Shahid Dhariwala. Originally crafted in 2020 as a
-                learning project — rebuilt and modernized with Next.js in 2026.
+                © {year} Shahid Dhariwala · originally built 2020 · rebuilt on
+                Next.js 16, 2026
             </p>
         </footer>
     )

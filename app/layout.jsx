@@ -1,11 +1,21 @@
 import Link from 'next/link'
-import { Inter } from 'next/font/google'
+import { Fraunces, Karla, IBM_Plex_Mono } from 'next/font/google'
 import ThemeProvider from '../components/ThemeProvider'
 import ThemeToggle from '../components/ThemeToggle'
 import Footer from '../components/Footer'
 import '../styles/global.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const display = Fraunces({
+    subsets: ['latin'],
+    variable: '--font-display',
+    axes: ['SOFT', 'opsz']
+})
+const body = Karla({ subsets: ['latin'], variable: '--font-body' })
+const mono = IBM_Plex_Mono({
+    subsets: ['latin'],
+    weight: ['400', '500'],
+    variable: '--font-mono'
+})
 
 export const metadata = {
     title: {
@@ -19,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={inter.className}>
+            <body className={`${display.variable} ${body.variable} ${mono.variable}`}>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"

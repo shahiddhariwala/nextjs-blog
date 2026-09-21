@@ -1,9 +1,9 @@
 const skills = [
-    'Java',
-    'Spring Boot',
     'React',
     'Next.js',
     'Node.js',
+    'Java',
+    'Spring Boot',
     'Angular',
     'PHP'
 ]
@@ -12,15 +12,16 @@ export default function Skills() {
     return (
         <section className="section" aria-labelledby="skills-heading">
             <h2 id="skills-heading" className="section-title">
-                Skills
+                Stack
             </h2>
-            <ul className="skill-list">
-                {skills.map((skill) => (
-                    <li key={skill} className="skill">
+            <p className="stack-line">
+                {skills.map((skill, i) => (
+                    <span key={skill}>
                         {skill}
-                    </li>
+                        {i < skills.length - 1 ? ' · ' : ''}
+                    </span>
                 ))}
-            </ul>
+            </p>
         </section>
     )
 }

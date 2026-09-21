@@ -42,6 +42,7 @@ export default async function PostPage({ params }) {
         <article className="post">
             <header className="post-header">
                 <h1 className="post-title">{postData.title}</h1>
+                <p className="post-source">source: posts/{postData.id}.md</p>
                 <div className="post-meta">
                     <Date dateString={postData.date} />
                     <div className="tag-row">

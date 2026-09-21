@@ -13,12 +13,12 @@ export default function Hero() {
                 priority
                 placeholder="blur"
             />
-            <p className="hero-eyebrow">Frontend Developer</p>
-            <h1 className="hero-title">Hi, I&apos;m Shahid Dhariwala</h1>
+            <p className="hero-eyebrow">// frontend developer — writing since 2020</p>
+            <h1 className="hero-title">Shahid Dhariwala</h1>
             <p className="hero-bio">
-                I build websites and web applications with React and Next.js. I
-                have professional experience with Java, Spring Boot, and
-                Node.js, and I write about what I learn along the way.
+                I build websites with React and Next.js, and I write about how
+                the web renders. Backend when I must — Java, Spring Boot,
+                Node.js.
             </p>
             <div className="hero-links">
                 <a
@@ -27,7 +27,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    GitHub
+                    GitHub ↗
                 </a>
                 <a
                     className="btn"
@@ -35,10 +35,10 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    LinkedIn
+                    LinkedIn ↗
                 </a>
                 <a className="btn" href="#blog">
-                    Read the blog
+                    read the writing ↓
                 </a>
             </div>
         </section>
