@@ -1,6 +1,6 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "nextjs-blog",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,13 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "date-fns": "^2.14.0",
-    "file-system": "^2.2.2",
-    "gray-matter": "^4.0.2",
-    "next": "9.3.5",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "remark": "^12.0.0",
-    "remark-html": "^11.0.2"
+    "date-fns": "^4.4.0",
+    "gray-matter": "^4.0.3",
+    "next": "^16.3.5",
+    "next-themes": "^0.4.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5"
   }
 }
